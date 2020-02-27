@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/kukyweb/static/css/main.be8fc23b.chunk.css",
-    "main.js": "/kukyweb/static/js/main.2282c49f.chunk.js",
-    "main.js.map": "/kukyweb/static/js/main.2282c49f.chunk.js.map",
+    "main.js": "/kukyweb/static/js/main.bd67108e.chunk.js",
+    "main.js.map": "/kukyweb/static/js/main.bd67108e.chunk.js.map",
     "runtime-main.js": "/kukyweb/static/js/runtime-main.c933f81a.js",
     "runtime-main.js.map": "/kukyweb/static/js/runtime-main.c933f81a.js.map",
-    "static/js/2.bcd28b3b.chunk.js": "/kukyweb/static/js/2.bcd28b3b.chunk.js",
-    "static/js/2.bcd28b3b.chunk.js.map": "/kukyweb/static/js/2.bcd28b3b.chunk.js.map",
+    "static/js/2.197ac039.chunk.js": "/kukyweb/static/js/2.197ac039.chunk.js",
+    "static/js/2.197ac039.chunk.js.map": "/kukyweb/static/js/2.197ac039.chunk.js.map",
     "index.html": "/kukyweb/index.html",
-    "precache-manifest.91c2a176a13be84f9a7ce7149a59f69a.js": "/kukyweb/precache-manifest.91c2a176a13be84f9a7ce7149a59f69a.js",
+    "precache-manifest.707ac4eba59523855c4413e0cc480a15.js": "/kukyweb/precache-manifest.707ac4eba59523855c4413e0cc480a15.js",
     "service-worker.js": "/kukyweb/service-worker.js",
     "static/css/main.be8fc23b.chunk.css.map": "/kukyweb/static/css/main.be8fc23b.chunk.css.map",
-    "static/js/2.bcd28b3b.chunk.js.LICENSE.txt": "/kukyweb/static/js/2.bcd28b3b.chunk.js.LICENSE.txt"
+    "static/js/2.197ac039.chunk.js.LICENSE.txt": "/kukyweb/static/js/2.197ac039.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c933f81a.js",
-    "static/js/2.bcd28b3b.chunk.js",
+    "static/js/2.197ac039.chunk.js",
     "static/css/main.be8fc23b.chunk.css",
-    "static/js/main.2282c49f.chunk.js"
+    "static/js/main.bd67108e.chunk.js"
   ]
 }
