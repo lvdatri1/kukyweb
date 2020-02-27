@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kukyweb/static/css/main.6e0e41cf.chunk.css",
+    "main.css": "/kukyweb/static/css/main.be8fc23b.chunk.css",
     "main.js": "/kukyweb/static/js/main.2282c49f.chunk.js",
     "main.js.map": "/kukyweb/static/js/main.2282c49f.chunk.js.map",
     "runtime-main.js": "/kukyweb/static/js/runtime-main.c933f81a.js",
@@ -8,15 +8,15 @@
     "static/js/2.bcd28b3b.chunk.js": "/kukyweb/static/js/2.bcd28b3b.chunk.js",
     "static/js/2.bcd28b3b.chunk.js.map": "/kukyweb/static/js/2.bcd28b3b.chunk.js.map",
     "index.html": "/kukyweb/index.html",
-    "precache-manifest.e3872341f549dddfd5a06c4e2822db3c.js": "/kukyweb/precache-manifest.e3872341f549dddfd5a06c4e2822db3c.js",
+    "precache-manifest.91c2a176a13be84f9a7ce7149a59f69a.js": "/kukyweb/precache-manifest.91c2a176a13be84f9a7ce7149a59f69a.js",
     "service-worker.js": "/kukyweb/service-worker.js",
-    "static/css/main.6e0e41cf.chunk.css.map": "/kukyweb/static/css/main.6e0e41cf.chunk.css.map",
+    "static/css/main.be8fc23b.chunk.css.map": "/kukyweb/static/css/main.be8fc23b.chunk.css.map",
     "static/js/2.bcd28b3b.chunk.js.LICENSE.txt": "/kukyweb/static/js/2.bcd28b3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c933f81a.js",
     "static/js/2.bcd28b3b.chunk.js",
-    "static/css/main.6e0e41cf.chunk.css",
+    "static/css/main.be8fc23b.chunk.css",
     "static/js/main.2282c49f.chunk.js"
   ]
 }
