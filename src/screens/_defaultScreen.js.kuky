@@ -1,0 +1,105 @@
+import React, { Component } from "react";
+import { Icon } from "native-base";
+import {
+  SafeAreaView,
+  View,
+  ScrollView,
+  FlatList,
+  RefreshControl,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  StatusBar,
+  Text
+} from "react-native";
+import Footer from "../components/Footer";
+import TimeLineTab from "../containers/TimeLineTab";
+import { connect } from "react-redux";
+import PostItem from "../components/PostItem";
+import { fetchPosts, refreshPosts } from "../actions/postActions";
+import CONSTANTS from "../common/PeertalConstants";
+import lodash from "lodash";
+import { getDeviceFirebaseToken, requestToReceivePushPermission } from "../actions/userActions";
+import firebase from "react-native-firebase";
+import { LoadingSpinner } from "../components/CoreUIComponents";
+import DiscoverHeaderContainer from "../components/DiscoverHeader";
+import { getCurrentLocation } from "../actions/commonActions";
+import PersonRowItem from "../components/PersonRowItem";
+import { fetchPeople, refreshPeople } from "../actions/peopleActions";
+
+class NotificationScreen extends Component {
+  render() {
+    return (
+      <View style={{ flexDirection: "column", flex: 1 }}>
+        <View
+          style={{
+            flex: 100 + CONSTANTS.SPARE_HEADER,
+            flexDirection: "column",
+            height: 120,
+            backgroundColor: "white"
+          }}
+        >
+          {/* <StatusBar /> */}
+          <View style={{ flexDirection: "row", marginTop: CONSTANTS.SPARE_HEADER }}>
+            <TouchableOpacity onPress={() => this.props.navigation.toggleDrawer()}>
+              <Image
+                source={{ uri: this.props.user.avatar }}
+                style={{
+                  width: 34,
+                  height: 34,
+                  borderRadius: 17,
+                  marginLeft: 10
+                }}
+              />
+            </TouchableOpacity>
+            <View
+              style={{
+                marginLeft: 10,
+                marginRight: 10,
+                height: 34,
+                // backgroundColor: CONSTANTS.MY_GRAYBG,
+                width: CONSTANTS.WIDTH - 30 - 34
+                // borderRadius: 17
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  flexDirection: "row",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                  height: "100%",
+                  row: "100%"
+                }}
+              >
+                <Icon
+                  name="dots-three-vertical"
+                  type="Entypo"
+                  style={{ marginTop: 6, marginRight: 10, fontSize: 16 }}
+                />
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+        <View
+          style={{
+            // backgroundColor: "gray",
+            flex: CONSTANTS.HEIGHT - 55 - 100 - CONSTANTS.SPARE_FOOTER - CONSTANTS.SPARE_HEADER
+          }}
+        />
+        <View>
+          <Text>Notification Lists</Text>
+        </View>
+        <View style={{ flex: 55 + CONSTANTS.SPARE_FOOTER }}>
+          <Footer {...this.props} active="people" />
+        </View>
+      </View>
+    );
+  }
+}
+
+const mapStateToProps = store => ({
+  user: store.user
+});
+const NotificationContainer = connect(mapStateToProps)(NotificationScreen);
+export default NotificationContainer;

@@ -1,0 +1,15 @@
+// Override default variables before the import
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800&display=swap");
+$body-bg: white;
+$body-color: #111;
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+#root {
+  font-family: Montserrat;
+  font-size: 1em;
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
