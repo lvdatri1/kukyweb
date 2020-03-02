@@ -39,7 +39,7 @@ const guestUser = {
   //   fullName: null,
   // },
 };
-const user = (state = guestUser, action) => {
+const user = (state = guestUser, action: any) => {
   // console.log('state is out', state.people);
   switch (action.type) {
     case "UPDATE_REACT_NAVIGATION_PROPS":
