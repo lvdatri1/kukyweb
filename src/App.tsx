@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import thunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
@@ -16,7 +16,6 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <NewPage></NewPage>
         <Switch>
           <Route path="/welcome">
             <WelcomePage></WelcomePage>

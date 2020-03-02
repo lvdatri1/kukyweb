@@ -1,3 +1,4 @@
+import { Action } from "redux";
 const posts = (state = { posts: [], postsLen: 0, isLoading: false, sortType: "TIMELINE" }, action: any) => {
   // console.log('state is out', state.posts);
 
@@ -27,7 +28,7 @@ const posts = (state = { posts: [], postsLen: 0, isLoading: false, sortType: "TI
       return {
         ...state,
         posts: state.posts.map((item: any) => {
-          if (item.id == action.data.postId)
+          if (item.id === action.data.postId)
             return { ...item, voteData: { VOTE_LIKE_POST: action.data.VOTE_LIKE_POST } };
           else return item;
         })
