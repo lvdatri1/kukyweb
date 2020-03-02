@@ -1,6 +1,6 @@
 import CONSTANTS from "../common/PeertalConstants";
-import Settings from "../models/SettingsObject";
-import FilterFriendsSettings from "../models/FilterFriendsSetting";
+// import Settings from "../models/SettingsObject";
+// import FilterFriendsSettings from "../models/FilterFriendsSetting";
 
 const _fullName = "Guest";
 const _email = "Guest@email.com";
@@ -30,8 +30,8 @@ const guestUser = {
   score: 4,
   longitude: 174.7835969,
   latitude: -41.2333075,
-  settings: new Settings(),
-  filterFriends: new FilterFriendsSettings(),
+  // settings: new Settings(),
+  // filterFriends: new FilterFriendsSettings(),
   reactNavigation: null
   // appleSignInUser: {
   //   user: null,
